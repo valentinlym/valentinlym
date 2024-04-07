@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paraitre</title>
+</head>
+
+<body>
+    <style>
+        /* FONT */
+        @font-face {
+            font-family: "GT Sectra";
+            src: url(font/GT-Super-Display-Medium.woff2);
+        }
+
+        /* CSS */
+        *,
+        ::after,
+        ::before {
+            margin: 0;
+            padding: 0;
+            box-sizing: none;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #0b0b0b;
+            flex-direction: column;
+        }
+        hr {
+            margin: 2px;
+            width: 356px;
+        }
+        .paraitre, hr {
+            font-family: "GT sectra";
+            font-size: 6rem;
+            font-weight: 100;
+            line-height: 6rem;
+            letter-spacing: 2px;
+            text-align: center;
+            color: #f35626;
+            background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -webkit-animation: hue 20s infinite linear;
+        }
+
+        @-webkit-keyframes hue {
+            from {
+                -webkit-filter: hue-rotate(0deg);
+            }
+
+            to {
+                -webkit-filter: hue-rotate(-360deg);
+            }
+        }
+    </style>
+    <h1 class="paraitre">Paraitre</h1>
+    <hr>
+    <hr>
+    <hr>
+</body>
+
+</html>
